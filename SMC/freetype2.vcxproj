@@ -230,6 +230,7 @@ copy ..\docs\LICENSE.TXT $(OutputPath)\licenses\freetype2.txt</Command>
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>$(OutDir)\lib\$(TargetName).lib</ImportLibrary>
       <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>freetype.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutputPath)\include
@@ -262,6 +263,7 @@ copy ..\docs\LICENSE.TXT $(OutputPath)\licenses\freetype2.txt</Command>
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
       <ProfileGuidedDatabase>$(OutDir)\bin\x64\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>freetype.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutputPath)\include
@@ -394,6 +396,7 @@ copy ..\docs\LICENSE.TXT $(OutputPath)\licenses\freetype2.txt</Command>
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>$(OutDir)\lib\$(TargetName).lib</ImportLibrary>
       <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>freetype.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutputPath)\include
@@ -438,6 +441,7 @@ copy ..\docs\LICENSE.TXT $(OutputPath)\licenses\freetype2.txt</Command>
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
       <ProfileGuidedDatabase>$(OutDir)\bin\x64\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>freetype.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutputPath)\include
@@ -456,7 +460,9 @@ copy ..\docs\LICENSE.TXT $(OutputPath)\licenses\freetype2.txt</Command>
     <ClCompile Include="..\src\autofit\autofit.c" />
     <ClCompile Include="..\src\base\ftbase.c" />
     <ClCompile Include="..\src\base\ftbbox.c" />
+    <ClCompile Include="..\src\base\ftbdf.c" />
     <ClCompile Include="..\src\base\ftbitmap.c" />
+    <ClCompile Include="..\src\base\ftcid.c" />
     <ClCompile Include="..\src\base\ftfstype.c" />
     <ClCompile Include="..\src\base\ftgasp.c" />
     <ClCompile Include="..\src\base\ftglyph.c" />
@@ -474,6 +480,7 @@ copy ..\docs\LICENSE.TXT $(OutputPath)\licenses\freetype2.txt</Command>
     <ClCompile Include="..\src\base\ftwinfnt.c" />
     <ClCompile Include="..\src\base\ftxf86.c" />
     <ClCompile Include="..\src\bdf\bdf.c" />
+    <ClCompile Include="..\src\bzip2\ftbzip2.c" />
     <ClCompile Include="..\src\cache\ftccache.c" />
     <ClCompile Include="..\src\cache\ftcmanag.c" />
     <ClCompile Include="..\src\cache\ftcmru.c" />
@@ -501,6 +508,9 @@ copy ..\docs\LICENSE.TXT $(OutputPath)\licenses\freetype2.txt</Command>
     <ClInclude Include="..\include\freetype\config\ftoption.h" />
     <ClInclude Include="..\include\freetype\config\ftstdlib.h" />
     <ClInclude Include="..\include\ft2build.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="freetype.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -76,6 +76,9 @@
     <Filter Include="Source Files\base\cff">
       <UniqueIdentifier>{3397a838-33ab-4fdf-86c3-3bb9b10565e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\bzip2">
+      <UniqueIdentifier>{0636856d-ddb2-4dc8-8689-6cef344261c9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\autofit\autofit.c">
@@ -201,6 +204,15 @@
     <ClCompile Include="..\src\cache\ftcmru.c">
       <Filter>Source Files\cache</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\base\ftbdf.c">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\base\ftcid.c">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\bzip2\ftbzip2.c">
+      <Filter>Source Files\bzip2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\ft2build.h">
@@ -221,5 +233,10 @@
     <ClInclude Include="..\include\freetype\config\ftconfig.h">
       <Filter>Header Files\freetype2\config</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="freetype.def">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
