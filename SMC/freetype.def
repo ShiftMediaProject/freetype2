@@ -148,3 +148,5 @@ EXPORTS
   FT_Vector_Unit
   FT_Get_BDF_Property
   FT_Get_X11_Font_Format
+  FT_Get_Advance
+  FT_Face_GetCharVariantIndex
