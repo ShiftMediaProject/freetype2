@@ -67,17 +67,23 @@
     <Filter Include="Source Files\winfonts">
       <UniqueIdentifier>{c967aa1e-20ae-4218-b99a-9cc620552f07}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\freetype2">
-      <UniqueIdentifier>{76cdc651-799d-4a5d-aeec-3b94ea760e93}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\freetype2\config">
-      <UniqueIdentifier>{49ae9c9f-3afe-4699-b4bc-2c3c0519578f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\base\cff">
       <UniqueIdentifier>{3397a838-33ab-4fdf-86c3-3bb9b10565e2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\bzip2">
       <UniqueIdentifier>{0636856d-ddb2-4dc8-8689-6cef344261c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{76cdc651-799d-4a5d-aeec-3b94ea760e93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\config">
+      <UniqueIdentifier>{49ae9c9f-3afe-4699-b4bc-2c3c0519578f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\internal">
+      <UniqueIdentifier>{a3b8b0b0-663e-4b4b-ad03-9a750e15e021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\internal\services">
+      <UniqueIdentifier>{0ad40547-151a-4d86-9d0b-51be22c48998}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -98,9 +104,6 @@
     </ClCompile>
     <ClCompile Include="..\src\cache\ftccache.c">
       <Filter>Source Files\cache</Filter>
-    </ClCompile>
-    <ClCompile Include="..\builds\win32\ftdebug.c">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\base\ftglyph.c">
       <Filter>Source Files\base</Filter>
@@ -213,25 +216,274 @@
     <ClCompile Include="..\src\bzip2\ftbzip2.c">
       <Filter>Source Files\bzip2</Filter>
     </ClCompile>
+    <ClCompile Include="..\builds\windows\ftdebug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\config\ftmodule.h">
+      <Filter>Header Files\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\config\ftoption.h">
+      <Filter>Header Files\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\config\ftstdlib.h">
+      <Filter>Header Files\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\config\ftconfig.h">
+      <Filter>Header Files\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\config\ftheader.h">
+      <Filter>Header Files\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftsnames.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftstroke.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftsynth.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftsystem.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\fttrigon.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftttdrv.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\fttypes.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftwinfnt.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftxf86.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\t1tables.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ttnameid.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tttables.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tttags.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ttunpat.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
     <ClInclude Include="..\include\ft2build.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\freetype\config\ftheader.h">
-      <Filter>Header Files\freetype2\config</Filter>
+    <ClInclude Include="..\include\ftadvanc.h">
+      <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\freetype\config\ftmodule.h">
-      <Filter>Header Files\freetype2\config</Filter>
+    <ClInclude Include="..\include\ftautoh.h">
+      <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\freetype\config\ftoption.h">
-      <Filter>Header Files\freetype2\config</Filter>
+    <ClInclude Include="..\include\ftbbox.h">
+      <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\freetype\config\ftstdlib.h">
-      <Filter>Header Files\freetype2\config</Filter>
+    <ClInclude Include="..\include\ftbdf.h">
+      <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\freetype\config\ftconfig.h">
-      <Filter>Header Files\freetype2\config</Filter>
+    <ClInclude Include="..\include\ftbitmap.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftbzip2.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftcache.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftcffdrv.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftchapters.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftcid.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\fterrdef.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\fterrors.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftgasp.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftglyph.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftgxval.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftgzip.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftimage.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftincrem.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftlcdfil.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftlist.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftlzw.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftmac.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftmm.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftmodapi.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftmoderr.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftotval.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftoutln.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftpfr.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftrender.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ftsizes.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\ftgloadr.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\ftmemory.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\ftobjs.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\ftpic.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\ftrfork.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\ftserv.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\ftstream.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\fttrace.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\ftvalid.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\internal.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\psaux.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\pshints.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\sfnt.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\t1types.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\tttypes.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\autohint.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\ftcalc.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\ftdebug.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\ftdriver.h">
+      <Filter>Header Files\include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svotval.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svpfr.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svpostnm.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svprop.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svpscmap.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svpsinfo.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svsfnt.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svttcmap.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svtteng.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svttglyf.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svwinfnt.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svxf86nm.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svbdf.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svcid.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svgldict.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svgxval.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svkern.h">
+      <Filter>Header Files\include\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\services\svmm.h">
+      <Filter>Header Files\include\internal\services</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
