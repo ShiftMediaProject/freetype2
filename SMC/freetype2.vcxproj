@@ -241,7 +241,6 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
       <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
       <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
       <ProgramDatabaseFile>$(OutDir)\lib\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -280,7 +279,6 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
       <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
       <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
       <ProgramDatabaseFile>$(OutDir)\lib\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -429,7 +427,6 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
       <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
@@ -480,7 +477,6 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
       <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
