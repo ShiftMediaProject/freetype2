@@ -158,11 +158,11 @@
       <SDLCheck>false</SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
-      <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
-      <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4018;4244;4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -174,9 +174,6 @@
     </Lib>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
-)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
@@ -185,8 +182,11 @@ mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>
-      </Command>
+      <Command>if exist $(OutDir)\include\freetype2 (
+rd /s /q $(OutDir)\include\freetype2
+cd ../
+cd $(ProjectDir)
+)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -196,11 +196,11 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
       <SDLCheck>false</SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
-      <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
-      <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4018;4244;4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -212,9 +212,6 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
-)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
@@ -223,8 +220,11 @@ mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>
-      </Command>
+      <Command>if exist $(OutDir)\include\freetype2 (
+rd /s /q $(OutDir)\include\freetype2
+cd ../
+cd $(ProjectDir)
+)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
@@ -234,11 +234,11 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
       <SDLCheck>false</SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
-      <PreprocessorDefinitions>'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';_DEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
-      <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4018;4244;4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
@@ -250,9 +250,6 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
-)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
@@ -261,8 +258,11 @@ mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>
-      </Command>
+      <Command>if exist $(OutDir)\include\freetype2 (
+rd /s /q $(OutDir)\include\freetype2
+cd ../
+cd $(ProjectDir)
+)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
@@ -272,11 +272,11 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
       <SDLCheck>false</SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
-      <PreprocessorDefinitions>'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';_DEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
-      <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4018;4244;4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
@@ -288,9 +288,6 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
-)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
@@ -299,8 +296,11 @@ mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>
-      </Command>
+      <Command>if exist $(OutDir)\include\freetype2 (
+rd /s /q $(OutDir)\include\freetype2
+cd ../
+cd $(ProjectDir)
+)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -321,10 +321,10 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
-      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
-      <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4018;4244;4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -338,9 +338,6 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
-)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
@@ -349,8 +346,11 @@ mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>
-      </Command>
+      <Command>if exist $(OutDir)\include\freetype2 (
+rd /s /q $(OutDir)\include\freetype2
+cd ../
+cd $(ProjectDir)
+)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -371,10 +371,10 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
-      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
-      <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4018;4244;4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -388,9 +388,6 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
-)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
@@ -399,8 +396,11 @@ mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>
-      </Command>
+      <Command>if exist $(OutDir)\include\freetype2 (
+rd /s /q $(OutDir)\include\freetype2
+cd ../
+cd $(ProjectDir)
+)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
@@ -421,10 +421,10 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
-      <PreprocessorDefinitions>'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';NDEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
-      <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4018;4244;4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -438,9 +438,6 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
-)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
@@ -449,8 +446,11 @@ mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>
-      </Command>
+      <Command>if exist $(OutDir)\include\freetype2 (
+rd /s /q $(OutDir)\include\freetype2
+cd ../
+cd $(ProjectDir)
+)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
@@ -471,10 +471,10 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
-      <PreprocessorDefinitions>'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';NDEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
-      <DisableSpecificWarnings>4018;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4018;4244;4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -488,9 +488,6 @@ copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
-)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
@@ -499,8 +496,11 @@ mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>
-      </Command>
+      <Command>if exist $(OutDir)\include\freetype2 (
+rd /s /q $(OutDir)\include\freetype2
+cd ../
+cd $(ProjectDir)
+)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
