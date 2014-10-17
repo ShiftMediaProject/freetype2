@@ -44,7 +44,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E62DC439-DE3B-4F2F-84DF-B34E51FA1969}</ProjectGuid>
-    <RootNamespace>freetype2</RootNamespace>
+    <RootNamespace>libfreetype2</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -290,7 +290,7 @@ cd $(ProjectDir)
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>$(OutDir)\bin\$(TargetName).lib</ImportLibrary>
       <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
-      <ModuleDefinitionFile>freetype.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>libfreetype.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
     </Link>
     <PostBuildEvent>
@@ -329,7 +329,7 @@ cd $(ProjectDir)
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>$(OutDir)\bin\$(TargetName).lib</ImportLibrary>
       <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
-      <ModuleDefinitionFile>freetype.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>libfreetype.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
@@ -583,7 +583,7 @@ cd $(ProjectDir)
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>$(OutDir)\bin\$(TargetName).lib</ImportLibrary>
       <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
-      <ModuleDefinitionFile>freetype.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>libfreetype.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
     </Link>
     <PostBuildEvent>
@@ -634,7 +634,7 @@ cd $(ProjectDir)
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>$(OutDir)\bin\$(TargetName).lib</ImportLibrary>
       <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
-      <ModuleDefinitionFile>freetype.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>libfreetype.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
@@ -790,7 +790,7 @@ cd $(ProjectDir)
     <ClInclude Include="..\include\ttunpat.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="freetype.def" />
+    <None Include="libfreetype.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
