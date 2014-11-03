@@ -102,9 +102,6 @@
     <ClCompile Include="..\src\base\ftbase.c">
       <Filter>Source Files\base</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\cache\ftccache.c">
-      <Filter>Source Files\cache</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\base\ftglyph.c">
       <Filter>Source Files\base</Filter>
     </ClCompile>
@@ -201,12 +198,6 @@
     <ClCompile Include="..\src\winfonts\winfnt.c">
       <Filter>Source Files\winfonts</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\cache\ftcmanag.c">
-      <Filter>Source Files\cache</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\cache\ftcmru.c">
-      <Filter>Source Files\cache</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\base\ftbdf.c">
       <Filter>Source Files\base</Filter>
     </ClCompile>
@@ -218,6 +209,9 @@
     </ClCompile>
     <ClCompile Include="..\builds\windows\ftdebug.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cache\ftcache.c">
+      <Filter>Source Files\cache</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -345,9 +339,6 @@
       <Filter>Header Files\freetype2</Filter>
     </ClInclude>
     <ClInclude Include="..\include\ftlzw.h">
-      <Filter>Header Files\freetype2</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\ftmac.h">
       <Filter>Header Files\freetype2</Filter>
     </ClInclude>
     <ClInclude Include="..\include\ftmm.h">

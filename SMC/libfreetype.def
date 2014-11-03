@@ -23,13 +23,27 @@ EXPORTS
   FT_Done_Library
   FT_Done_Size
   FT_Face_CheckTrueTypePatents
+  FT_Face_GetCharsOfVariant
+  FT_Face_GetCharVariantIndex
+  FT_Face_GetCharVariantIsDefault
+  FT_Face_GetVariantSelectors
+  FT_Face_GetVariantsOfChar
   FT_Face_SetUnpatentedHinting
   FT_FloorFix
+  FT_Get_Advance
+  FT_Get_Advances
+  FT_Get_BDF_Charset_ID
+  FT_Get_BDF_Property
+  FT_Get_CID_Is_Internally_CID_Keyed
+  FT_Get_CID_From_Glyph_Index
+  FT_Get_CID_Registry_Ordering_Supplement
   FT_Get_CMap_Format
   FT_Get_CMap_Language_ID
   FT_Get_Char_Index
   FT_Get_Charmap_Index
   FT_Get_First_Char
+  FT_Get_FSType_Flags
+  FT_Get_Gasp
   FT_Get_Glyph
   FT_Get_Glyph_Name
   FT_Get_Kerning
@@ -43,6 +57,7 @@ EXPORTS
   FT_Get_PFR_Metrics
   FT_Get_PS_Font_Info
   FT_Get_PS_Font_Private
+  FT_Get_PS_Font_Value
   FT_Get_Postscript_Name
   FT_Get_Renderer
   FT_Get_Sfnt_Name
@@ -52,6 +67,7 @@ EXPORTS
   FT_Get_Track_Kerning
   FT_Get_TrueType_Engine_Type
   FT_Get_WinFNT_Header
+  FT_Get_X11_Font_Format
   FT_GlyphSlot_Embolden
   FT_GlyphSlot_Oblique
   FT_GlyphSlot_Own_Bitmap
@@ -61,8 +77,11 @@ EXPORTS
   FT_Glyph_StrokeBorder
   FT_Glyph_To_Bitmap
   FT_Glyph_Transform
+  FT_Gzip_Uncompress
   FT_Has_PS_Glyph_Names
   FT_Init_FreeType
+  FT_Library_SetLcdFilter
+  FT_Library_SetLcdFilterWeights
   FT_Library_Version
   FT_List_Add
   FT_List_Finalize
@@ -91,6 +110,7 @@ EXPORTS
   FT_Outline_Done
   FT_Outline_Done_Internal
   FT_Outline_Embolden
+  FT_Outline_EmboldenXY
   FT_Outline_GetInsideBorder
   FT_Outline_GetOutsideBorder
   FT_Outline_Get_BBox
@@ -103,6 +123,10 @@ EXPORTS
   FT_Outline_Reverse
   FT_Outline_Transform
   FT_Outline_Translate
+  FT_Property_Get
+  FT_Property_Set
+  FT_Reference_Library
+  FT_Reference_Face
   FT_Remove_Module
   FT_Render_Glyph
   FT_Request_Size
@@ -121,6 +145,7 @@ EXPORTS
   FT_Set_Var_Design_Coordinates
   FT_Sfnt_Table_Info
   FT_Sin
+  FT_Stream_OpenBzip2
   FT_Stream_OpenGzip
   FT_Stream_OpenLZW
   FT_Stroker_BeginSubPath
@@ -150,3 +175,17 @@ EXPORTS
   FT_Get_X11_Font_Format
   FT_Get_Advance
   FT_Face_GetCharVariantIndex
+  FTC_CMapCache_Lookup
+  FTC_CMapCache_New
+  FTC_ImageCache_Lookup
+  FTC_ImageCache_LookupScaler
+  FTC_ImageCache_New
+  FTC_Manager_Done
+  FTC_Manager_LookupFace
+  FTC_Manager_LookupSize
+  FTC_Manager_New
+  FTC_Manager_RemoveFaceID
+  FTC_Manager_Reset
+  FTC_SBitCache_Lookup
+  FTC_SBitCache_LookupScaler
+  FTC_SBitCache_New

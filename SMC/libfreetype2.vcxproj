@@ -221,6 +221,7 @@
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
+del $(OutDir)\include\freetype2\ftmac.h
 copy ..\include\config\*.h $(OutDir)\include\freetype2\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
@@ -259,6 +260,7 @@ cd $(ProjectDir)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
+del $(OutDir)\include\freetype2\ftmac.h
 copy ..\include\config\*.h $(OutDir)\include\freetype2\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
@@ -298,6 +300,7 @@ cd $(ProjectDir)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
+del $(OutDir)\include\freetype2\ftmac.h
 copy ..\include\config\*.h $(OutDir)\include\freetype2\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
@@ -336,6 +339,7 @@ cd $(ProjectDir)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
+del $(OutDir)\include\freetype2\ftmac.h
 copy ..\include\config\*.h $(OutDir)\include\freetype2\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
@@ -387,6 +391,7 @@ cd $(ProjectDir)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
+del $(OutDir)\include\freetype2\ftmac.h
 copy ..\include\config\*.h $(OutDir)\include\freetype2\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
@@ -438,6 +443,7 @@ cd $(ProjectDir)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
+del $(OutDir)\include\freetype2\ftmac.h
 copy ..\include\config\*.h $(OutDir)\include\freetype2\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
@@ -489,6 +495,7 @@ cd $(ProjectDir)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
+del $(OutDir)\include\freetype2\ftmac.h
 copy ..\include\config\*.h $(OutDir)\include\freetype2\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
@@ -540,6 +547,7 @@ cd $(ProjectDir)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
+del $(OutDir)\include\freetype2\ftmac.h
 copy ..\include\config\*.h $(OutDir)\include\freetype2\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
@@ -591,6 +599,7 @@ cd $(ProjectDir)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
+del $(OutDir)\include\freetype2\ftmac.h
 copy ..\include\config\*.h $(OutDir)\include\freetype2\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
@@ -641,6 +650,7 @@ cd $(ProjectDir)
 mkdir $(OutDir)\include\freetype2
 mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
+del $(OutDir)\include\freetype2\ftmac.h
 copy ..\include\config\*.h $(OutDir)\include\freetype2\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
@@ -679,9 +689,7 @@ cd $(ProjectDir)
     <ClCompile Include="..\src\base\ftxf86.c" />
     <ClCompile Include="..\src\bdf\bdf.c" />
     <ClCompile Include="..\src\bzip2\ftbzip2.c" />
-    <ClCompile Include="..\src\cache\ftccache.c" />
-    <ClCompile Include="..\src\cache\ftcmanag.c" />
-    <ClCompile Include="..\src\cache\ftcmru.c" />
+    <ClCompile Include="..\src\cache\ftcache.c" />
     <ClCompile Include="..\src\cff\cff.c" />
     <ClCompile Include="..\src\cid\type1cid.c" />
     <ClCompile Include="..\src\gzip\ftgzip.c" />
@@ -728,7 +736,6 @@ cd $(ProjectDir)
     <ClInclude Include="..\include\ftlcdfil.h" />
     <ClInclude Include="..\include\ftlist.h" />
     <ClInclude Include="..\include\ftlzw.h" />
-    <ClInclude Include="..\include\ftmac.h" />
     <ClInclude Include="..\include\ftmm.h" />
     <ClInclude Include="..\include\ftmodapi.h" />
     <ClInclude Include="..\include\ftmoderr.h" />
