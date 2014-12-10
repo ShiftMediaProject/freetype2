@@ -1,5 +1,21 @@
-LIBRARY 
+LIBRARY libfreetype.dll
+DESCRIPTION  FreeType 2 DLL
 EXPORTS
+  FTC_CMapCache_Lookup
+  FTC_CMapCache_New
+  FTC_ImageCache_Lookup
+  FTC_ImageCache_LookupScaler
+  FTC_ImageCache_New
+  FTC_Manager_Done
+  FTC_Manager_LookupFace
+  FTC_Manager_LookupSize
+  FTC_Manager_New
+  FTC_Manager_RemoveFaceID
+  FTC_Manager_Reset
+  FTC_Node_Unref
+  FTC_SBitCache_Lookup
+  FTC_SBitCache_LookupScaler
+  FTC_SBitCache_New
   FT_Activate_Size
   FT_Add_Default_Modules
   FT_Add_Module
@@ -23,9 +39,9 @@ EXPORTS
   FT_Done_Library
   FT_Done_Size
   FT_Face_CheckTrueTypePatents
-  FT_Face_GetCharsOfVariant
   FT_Face_GetCharVariantIndex
   FT_Face_GetCharVariantIsDefault
+  FT_Face_GetCharsOfVariant
   FT_Face_GetVariantSelectors
   FT_Face_GetVariantsOfChar
   FT_Face_SetUnpatentedHinting
@@ -34,15 +50,15 @@ EXPORTS
   FT_Get_Advances
   FT_Get_BDF_Charset_ID
   FT_Get_BDF_Property
-  FT_Get_CID_Is_Internally_CID_Keyed
   FT_Get_CID_From_Glyph_Index
+  FT_Get_CID_Is_Internally_CID_Keyed
   FT_Get_CID_Registry_Ordering_Supplement
   FT_Get_CMap_Format
   FT_Get_CMap_Language_ID
   FT_Get_Char_Index
   FT_Get_Charmap_Index
-  FT_Get_First_Char
   FT_Get_FSType_Flags
+  FT_Get_First_Char
   FT_Get_Gasp
   FT_Get_Glyph
   FT_Get_Glyph_Name
@@ -125,8 +141,8 @@ EXPORTS
   FT_Outline_Translate
   FT_Property_Get
   FT_Property_Set
-  FT_Reference_Library
   FT_Reference_Face
+  FT_Reference_Library
   FT_Remove_Module
   FT_Render_Glyph
   FT_Request_Size
@@ -171,21 +187,3 @@ EXPORTS
   FT_Vector_Rotate
   FT_Vector_Transform
   FT_Vector_Unit
-  FT_Get_BDF_Property
-  FT_Get_X11_Font_Format
-  FT_Get_Advance
-  FT_Face_GetCharVariantIndex
-  FTC_CMapCache_Lookup
-  FTC_CMapCache_New
-  FTC_ImageCache_Lookup
-  FTC_ImageCache_LookupScaler
-  FTC_ImageCache_New
-  FTC_Manager_Done
-  FTC_Manager_LookupFace
-  FTC_Manager_LookupSize
-  FTC_Manager_New
-  FTC_Manager_RemoveFaceID
-  FTC_Manager_Reset
-  FTC_SBitCache_Lookup
-  FTC_SBitCache_LookupScaler
-  FTC_SBitCache_New
