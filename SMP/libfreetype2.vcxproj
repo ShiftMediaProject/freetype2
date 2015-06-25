@@ -668,6 +668,7 @@ cd $(ProjectDir)
     <ClCompile Include="..\src\base\ftbdf.c" />
     <ClCompile Include="..\src\base\ftbitmap.c" />
     <ClCompile Include="..\src\base\ftcid.c" />
+    <ClCompile Include="..\src\base\ftfntfmt.c" />
     <ClCompile Include="..\src\base\ftfstype.c" />
     <ClCompile Include="..\src\base\ftgasp.c" />
     <ClCompile Include="..\src\base\ftglyph.c" />
@@ -683,7 +684,6 @@ cd $(ProjectDir)
     <ClCompile Include="..\src\base\ftsystem.c" />
     <ClCompile Include="..\src\base\fttype1.c" />
     <ClCompile Include="..\src\base\ftwinfnt.c" />
-    <ClCompile Include="..\src\base\ftxf86.c" />
     <ClCompile Include="..\src\bdf\bdf.c" />
     <ClCompile Include="..\src\bzip2\ftbzip2.c" />
     <ClCompile Include="..\src\cache\ftcache.c" />

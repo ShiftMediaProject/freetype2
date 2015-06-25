@@ -141,9 +141,6 @@
     <ClCompile Include="..\src\base\ftwinfnt.c">
       <Filter>Source Files\base</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\base\ftxf86.c">
-      <Filter>Source Files\base</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\base\ftbbox.c">
       <Filter>Source Files\base</Filter>
     </ClCompile>
@@ -212,6 +209,9 @@
     </ClCompile>
     <ClCompile Include="..\src\cache\ftcache.c">
       <Filter>Source Files\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\base\ftfntfmt.c">
+      <Filter>Source Files\base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

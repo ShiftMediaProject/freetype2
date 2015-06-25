@@ -26,6 +26,7 @@ EXPORTS
   FT_Bitmap_Copy
   FT_Bitmap_Done
   FT_Bitmap_Embolden
+  FT_Bitmap_Init
   FT_Bitmap_New
   FT_CeilFix
   FT_ClassicKern_Free
@@ -58,6 +59,7 @@ EXPORTS
   FT_Get_Charmap_Index
   FT_Get_FSType_Flags
   FT_Get_First_Char
+  FT_Get_Font_Format
   FT_Get_Gasp
   FT_Get_Glyph
   FT_Get_Glyph_Name
