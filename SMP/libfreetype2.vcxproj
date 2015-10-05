@@ -228,10 +228,12 @@
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
 mkdir $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
-del $(OutDir)\include\freetype2\ftmac.h
-copy ..\include\config\*.h $(OutDir)\include\freetype2\config
+mkdir $(OutDir)\include\freetype2\freetype
+copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
+del $(OutDir)\include\freetype2\freetype\ftmac.h
+mkdir $(OutDir)\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
@@ -266,10 +268,12 @@ cd $(ProjectDir)
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
 mkdir $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
-del $(OutDir)\include\freetype2\ftmac.h
-copy ..\include\config\*.h $(OutDir)\include\freetype2\config
+mkdir $(OutDir)\include\freetype2\freetype
+copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
+del $(OutDir)\include\freetype2\freetype\ftmac.h
+mkdir $(OutDir)\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
@@ -306,10 +310,12 @@ cd $(ProjectDir)
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
 mkdir $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
-del $(OutDir)\include\freetype2\ftmac.h
-copy ..\include\config\*.h $(OutDir)\include\freetype2\config
+mkdir $(OutDir)\include\freetype2\freetype
+copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
+del $(OutDir)\include\freetype2\freetype\ftmac.h
+mkdir $(OutDir)\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
@@ -345,10 +351,12 @@ cd $(ProjectDir)
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
 mkdir $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
-del $(OutDir)\include\freetype2\ftmac.h
-copy ..\include\config\*.h $(OutDir)\include\freetype2\config
+mkdir $(OutDir)\include\freetype2\freetype
+copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
+del $(OutDir)\include\freetype2\freetype\ftmac.h
+mkdir $(OutDir)\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
@@ -396,10 +404,12 @@ cd $(ProjectDir)
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
 mkdir $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
-del $(OutDir)\include\freetype2\ftmac.h
-copy ..\include\config\*.h $(OutDir)\include\freetype2\config
+mkdir $(OutDir)\include\freetype2\freetype
+copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
+del $(OutDir)\include\freetype2\freetype\ftmac.h
+mkdir $(OutDir)\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
@@ -447,10 +457,12 @@ cd $(ProjectDir)
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
 mkdir $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
-del $(OutDir)\include\freetype2\ftmac.h
-copy ..\include\config\*.h $(OutDir)\include\freetype2\config
+mkdir $(OutDir)\include\freetype2\freetype
+copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
+del $(OutDir)\include\freetype2\freetype\ftmac.h
+mkdir $(OutDir)\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
@@ -498,10 +510,12 @@ cd $(ProjectDir)
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
 mkdir $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
-del $(OutDir)\include\freetype2\ftmac.h
-copy ..\include\config\*.h $(OutDir)\include\freetype2\config
+mkdir $(OutDir)\include\freetype2\freetype
+copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
+del $(OutDir)\include\freetype2\freetype\ftmac.h
+mkdir $(OutDir)\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
@@ -549,10 +563,12 @@ cd $(ProjectDir)
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
 mkdir $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
-del $(OutDir)\include\freetype2\ftmac.h
-copy ..\include\config\*.h $(OutDir)\include\freetype2\config
+mkdir $(OutDir)\include\freetype2\freetype
+copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
+del $(OutDir)\include\freetype2\freetype\ftmac.h
+mkdir $(OutDir)\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
@@ -600,10 +616,12 @@ cd $(ProjectDir)
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
 mkdir $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
-del $(OutDir)\include\freetype2\ftmac.h
-copy ..\include\config\*.h $(OutDir)\include\freetype2\config
+mkdir $(OutDir)\include\freetype2\freetype
+copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
+del $(OutDir)\include\freetype2\freetype\ftmac.h
+mkdir $(OutDir)\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
@@ -650,10 +668,12 @@ cd $(ProjectDir)
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
 mkdir $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\config
 copy ..\include\*.h $(OutDir)\include\freetype2
-del $(OutDir)\include\freetype2\ftmac.h
-copy ..\include\config\*.h $(OutDir)\include\freetype2\config
+mkdir $(OutDir)\include\freetype2\freetype
+copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
+del $(OutDir)\include\freetype2\freetype\ftmac.h
+mkdir $(OutDir)\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
