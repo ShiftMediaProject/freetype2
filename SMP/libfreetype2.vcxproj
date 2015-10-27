@@ -211,7 +211,7 @@
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0502;_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -251,7 +251,7 @@ cd $(ProjectDir)
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0600;_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -291,7 +291,7 @@ cd $(ProjectDir)
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0502;'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -333,7 +333,7 @@ cd $(ProjectDir)
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0600;'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -385,7 +385,7 @@ cd $(ProjectDir)
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0502;NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
@@ -438,7 +438,7 @@ cd $(ProjectDir)
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0502;NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
@@ -491,7 +491,7 @@ cd $(ProjectDir)
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0600;NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
@@ -544,7 +544,7 @@ cd $(ProjectDir)
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0600;NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
@@ -597,7 +597,7 @@ cd $(ProjectDir)
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0502;'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
@@ -650,7 +650,7 @@ cd $(ProjectDir)
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0600;'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
@@ -730,93 +730,94 @@ cd $(ProjectDir)
     <ClCompile Include="..\src\winfonts\winfnt.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\config\ftconfig.h" />
-    <ClInclude Include="..\include\config\ftheader.h" />
-    <ClInclude Include="..\include\config\ftmodule.h" />
-    <ClInclude Include="..\include\config\ftoption.h" />
-    <ClInclude Include="..\include\config\ftstdlib.h" />
-    <ClInclude Include="..\include\freetype.h" />
+    <ClInclude Include="..\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="..\include\freetype\config\ftheader.h" />
+    <ClInclude Include="..\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="..\include\freetype\config\ftoption.h" />
+    <ClInclude Include="..\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="..\include\freetype\freetype.h" />
+    <ClInclude Include="..\include\freetype\ftadvanc.h" />
+    <ClInclude Include="..\include\freetype\ftautoh.h" />
+    <ClInclude Include="..\include\freetype\ftbbox.h" />
+    <ClInclude Include="..\include\freetype\ftbdf.h" />
+    <ClInclude Include="..\include\freetype\ftbitmap.h" />
+    <ClInclude Include="..\include\freetype\ftbzip2.h" />
+    <ClInclude Include="..\include\freetype\ftcache.h" />
+    <ClInclude Include="..\include\freetype\ftcffdrv.h" />
+    <ClInclude Include="..\include\freetype\ftchapters.h" />
+    <ClInclude Include="..\include\freetype\ftcid.h" />
+    <ClInclude Include="..\include\freetype\fterrdef.h" />
+    <ClInclude Include="..\include\freetype\fterrors.h" />
+    <ClInclude Include="..\include\freetype\ftfntfmt.h" />
+    <ClInclude Include="..\include\freetype\ftgasp.h" />
+    <ClInclude Include="..\include\freetype\ftglyph.h" />
+    <ClInclude Include="..\include\freetype\ftgxval.h" />
+    <ClInclude Include="..\include\freetype\ftgzip.h" />
+    <ClInclude Include="..\include\freetype\ftimage.h" />
+    <ClInclude Include="..\include\freetype\ftincrem.h" />
+    <ClInclude Include="..\include\freetype\ftlcdfil.h" />
+    <ClInclude Include="..\include\freetype\ftlist.h" />
+    <ClInclude Include="..\include\freetype\ftlzw.h" />
+    <ClInclude Include="..\include\freetype\ftmac.h" />
+    <ClInclude Include="..\include\freetype\ftmm.h" />
+    <ClInclude Include="..\include\freetype\ftmodapi.h" />
+    <ClInclude Include="..\include\freetype\ftmoderr.h" />
+    <ClInclude Include="..\include\freetype\ftotval.h" />
+    <ClInclude Include="..\include\freetype\ftoutln.h" />
+    <ClInclude Include="..\include\freetype\ftpfr.h" />
+    <ClInclude Include="..\include\freetype\ftrender.h" />
+    <ClInclude Include="..\include\freetype\ftsizes.h" />
+    <ClInclude Include="..\include\freetype\ftsnames.h" />
+    <ClInclude Include="..\include\freetype\ftstroke.h" />
+    <ClInclude Include="..\include\freetype\ftsynth.h" />
+    <ClInclude Include="..\include\freetype\ftsystem.h" />
+    <ClInclude Include="..\include\freetype\fttrigon.h" />
+    <ClInclude Include="..\include\freetype\ftttdrv.h" />
+    <ClInclude Include="..\include\freetype\fttypes.h" />
+    <ClInclude Include="..\include\freetype\ftwinfnt.h" />
+    <ClInclude Include="..\include\freetype\internal\autohint.h" />
+    <ClInclude Include="..\include\freetype\internal\ftcalc.h" />
+    <ClInclude Include="..\include\freetype\internal\ftdebug.h" />
+    <ClInclude Include="..\include\freetype\internal\ftdriver.h" />
+    <ClInclude Include="..\include\freetype\internal\ftgloadr.h" />
+    <ClInclude Include="..\include\freetype\internal\ftmemory.h" />
+    <ClInclude Include="..\include\freetype\internal\ftobjs.h" />
+    <ClInclude Include="..\include\freetype\internal\ftpic.h" />
+    <ClInclude Include="..\include\freetype\internal\ftrfork.h" />
+    <ClInclude Include="..\include\freetype\internal\ftserv.h" />
+    <ClInclude Include="..\include\freetype\internal\ftstream.h" />
+    <ClInclude Include="..\include\freetype\internal\fttrace.h" />
+    <ClInclude Include="..\include\freetype\internal\ftvalid.h" />
+    <ClInclude Include="..\include\freetype\internal\internal.h" />
+    <ClInclude Include="..\include\freetype\internal\psaux.h" />
+    <ClInclude Include="..\include\freetype\internal\pshints.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svbdf.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svcid.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svfntfmt.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svgldict.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svgxval.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svkern.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svmm.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svotval.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svpfr.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svpostnm.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svprop.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svpscmap.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svpsinfo.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svsfnt.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svttcmap.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svtteng.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svttglyf.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svwinfnt.h" />
+    <ClInclude Include="..\include\freetype\internal\sfnt.h" />
+    <ClInclude Include="..\include\freetype\internal\t1types.h" />
+    <ClInclude Include="..\include\freetype\internal\tttypes.h" />
+    <ClInclude Include="..\include\freetype\t1tables.h" />
+    <ClInclude Include="..\include\freetype\ttnameid.h" />
+    <ClInclude Include="..\include\freetype\tttables.h" />
+    <ClInclude Include="..\include\freetype\tttags.h" />
+    <ClInclude Include="..\include\freetype\ttunpat.h" />
     <ClInclude Include="..\include\ft2build.h" />
-    <ClInclude Include="..\include\ftadvanc.h" />
-    <ClInclude Include="..\include\ftautoh.h" />
-    <ClInclude Include="..\include\ftbbox.h" />
-    <ClInclude Include="..\include\ftbdf.h" />
-    <ClInclude Include="..\include\ftbitmap.h" />
-    <ClInclude Include="..\include\ftbzip2.h" />
-    <ClInclude Include="..\include\ftcache.h" />
-    <ClInclude Include="..\include\ftcffdrv.h" />
-    <ClInclude Include="..\include\ftchapters.h" />
-    <ClInclude Include="..\include\ftcid.h" />
-    <ClInclude Include="..\include\fterrdef.h" />
-    <ClInclude Include="..\include\fterrors.h" />
-    <ClInclude Include="..\include\ftgasp.h" />
-    <ClInclude Include="..\include\ftglyph.h" />
-    <ClInclude Include="..\include\ftgxval.h" />
-    <ClInclude Include="..\include\ftgzip.h" />
-    <ClInclude Include="..\include\ftimage.h" />
-    <ClInclude Include="..\include\ftincrem.h" />
-    <ClInclude Include="..\include\ftlcdfil.h" />
-    <ClInclude Include="..\include\ftlist.h" />
-    <ClInclude Include="..\include\ftlzw.h" />
-    <ClInclude Include="..\include\ftmm.h" />
-    <ClInclude Include="..\include\ftmodapi.h" />
-    <ClInclude Include="..\include\ftmoderr.h" />
-    <ClInclude Include="..\include\ftotval.h" />
-    <ClInclude Include="..\include\ftoutln.h" />
-    <ClInclude Include="..\include\ftpfr.h" />
-    <ClInclude Include="..\include\ftrender.h" />
-    <ClInclude Include="..\include\ftsizes.h" />
-    <ClInclude Include="..\include\ftsnames.h" />
-    <ClInclude Include="..\include\ftstroke.h" />
-    <ClInclude Include="..\include\ftsynth.h" />
-    <ClInclude Include="..\include\ftsystem.h" />
-    <ClInclude Include="..\include\fttrigon.h" />
-    <ClInclude Include="..\include\ftttdrv.h" />
-    <ClInclude Include="..\include\fttypes.h" />
-    <ClInclude Include="..\include\ftwinfnt.h" />
-    <ClInclude Include="..\include\ftxf86.h" />
-    <ClInclude Include="..\include\internal\autohint.h" />
-    <ClInclude Include="..\include\internal\ftcalc.h" />
-    <ClInclude Include="..\include\internal\ftdebug.h" />
-    <ClInclude Include="..\include\internal\ftdriver.h" />
-    <ClInclude Include="..\include\internal\ftgloadr.h" />
-    <ClInclude Include="..\include\internal\ftmemory.h" />
-    <ClInclude Include="..\include\internal\ftobjs.h" />
-    <ClInclude Include="..\include\internal\ftpic.h" />
-    <ClInclude Include="..\include\internal\ftrfork.h" />
-    <ClInclude Include="..\include\internal\ftserv.h" />
-    <ClInclude Include="..\include\internal\ftstream.h" />
-    <ClInclude Include="..\include\internal\fttrace.h" />
-    <ClInclude Include="..\include\internal\ftvalid.h" />
-    <ClInclude Include="..\include\internal\internal.h" />
-    <ClInclude Include="..\include\internal\psaux.h" />
-    <ClInclude Include="..\include\internal\pshints.h" />
-    <ClInclude Include="..\include\internal\services\svbdf.h" />
-    <ClInclude Include="..\include\internal\services\svcid.h" />
-    <ClInclude Include="..\include\internal\services\svgldict.h" />
-    <ClInclude Include="..\include\internal\services\svgxval.h" />
-    <ClInclude Include="..\include\internal\services\svkern.h" />
-    <ClInclude Include="..\include\internal\services\svmm.h" />
-    <ClInclude Include="..\include\internal\services\svotval.h" />
-    <ClInclude Include="..\include\internal\services\svpfr.h" />
-    <ClInclude Include="..\include\internal\services\svpostnm.h" />
-    <ClInclude Include="..\include\internal\services\svprop.h" />
-    <ClInclude Include="..\include\internal\services\svpscmap.h" />
-    <ClInclude Include="..\include\internal\services\svpsinfo.h" />
-    <ClInclude Include="..\include\internal\services\svsfnt.h" />
-    <ClInclude Include="..\include\internal\services\svttcmap.h" />
-    <ClInclude Include="..\include\internal\services\svtteng.h" />
-    <ClInclude Include="..\include\internal\services\svttglyf.h" />
-    <ClInclude Include="..\include\internal\services\svwinfnt.h" />
-    <ClInclude Include="..\include\internal\services\svxf86nm.h" />
-    <ClInclude Include="..\include\internal\sfnt.h" />
-    <ClInclude Include="..\include\internal\t1types.h" />
-    <ClInclude Include="..\include\internal\tttypes.h" />
-    <ClInclude Include="..\include\t1tables.h" />
-    <ClInclude Include="..\include\ttnameid.h" />
-    <ClInclude Include="..\include\tttables.h" />
-    <ClInclude Include="..\include\tttags.h" />
-    <ClInclude Include="..\include\ttunpat.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="libfreetype.def" />
