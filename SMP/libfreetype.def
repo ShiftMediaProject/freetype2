@@ -1,4 +1,4 @@
-DESCRIPTION  FreeType 2 DLL
+
 EXPORTS
   FTC_CMapCache_Lookup
   FTC_CMapCache_New
