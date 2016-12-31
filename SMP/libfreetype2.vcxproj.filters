@@ -482,6 +482,9 @@
     <ClInclude Include="..\include\freetype\internal\services\svfntfmt.h">
       <Filter>Header Files\freetype2\freetype\internal\services</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\freetype\internal\services\svmetric.h">
+      <Filter>Header Files\freetype2\freetype\internal\services</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="libfreetype.def">

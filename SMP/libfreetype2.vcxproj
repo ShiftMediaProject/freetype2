@@ -929,6 +929,7 @@ del /f /q $(OutDir)\licenses\freetype2.txt
     <ClInclude Include="..\include\freetype\internal\services\svgldict.h" />
     <ClInclude Include="..\include\freetype\internal\services\svgxval.h" />
     <ClInclude Include="..\include\freetype\internal\services\svkern.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svmetric.h" />
     <ClInclude Include="..\include\freetype\internal\services\svmm.h" />
     <ClInclude Include="..\include\freetype\internal\services\svotval.h" />
     <ClInclude Include="..\include\freetype\internal\services\svpfr.h" />

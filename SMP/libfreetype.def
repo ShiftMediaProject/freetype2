@@ -64,6 +64,7 @@ EXPORTS
   FT_Get_Glyph
   FT_Get_Glyph_Name
   FT_Get_Kerning
+  FT_Get_MM_Blend_Coordinates
   FT_Get_MM_Var
   FT_Get_Module
   FT_Get_Multi_Master
@@ -83,6 +84,8 @@ EXPORTS
   FT_Get_SubGlyph_Info
   FT_Get_Track_Kerning
   FT_Get_TrueType_Engine_Type
+  FT_Get_Var_Blend_Coordinates
+  FT_Get_Var_Design_Coordinates
   FT_Get_WinFNT_Header
   FT_Get_X11_Font_Format
   FT_GlyphSlot_Embolden
