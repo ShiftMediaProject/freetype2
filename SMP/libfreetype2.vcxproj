@@ -900,6 +900,7 @@ del /f /q $(OutDir)\licenses\freetype2.txt
     <ClInclude Include="..\include\freetype\ftmoderr.h" />
     <ClInclude Include="..\include\freetype\ftotval.h" />
     <ClInclude Include="..\include\freetype\ftoutln.h" />
+    <ClInclude Include="..\include\freetype\ftpcfdrv.h" />
     <ClInclude Include="..\include\freetype\ftpfr.h" />
     <ClInclude Include="..\include\freetype\ftrender.h" />
     <ClInclude Include="..\include\freetype\ftsizes.h" />

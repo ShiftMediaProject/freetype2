@@ -44,6 +44,7 @@ EXPORTS
   FT_Face_GetCharsOfVariant
   FT_Face_GetVariantSelectors
   FT_Face_GetVariantsOfChar
+  FT_Face_Properties
   FT_Face_SetUnpatentedHinting
   FT_FloorFix
   FT_Get_Advance
@@ -78,6 +79,7 @@ EXPORTS
   FT_Get_PS_Font_Value
   FT_Get_Postscript_Name
   FT_Get_Renderer
+  FT_Get_Sfnt_LangTag
   FT_Get_Sfnt_Name
   FT_Get_Sfnt_Name_Count
   FT_Get_Sfnt_Table
@@ -156,6 +158,7 @@ EXPORTS
   FT_Set_Char_Size
   FT_Set_Charmap
   FT_Set_Debug_Hook
+  FT_Set_Default_Properties
   FT_Set_MM_Blend_Coordinates
   FT_Set_MM_Design_Coordinates
   FT_Set_Pixel_Sizes
