@@ -179,14 +179,12 @@
     <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
     <TargetName>freetyped</TargetName>
-    <LinkIncremental>false</LinkIncremental>
     <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
     <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
     <TargetName>freetyped</TargetName>
     <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
-    <LinkIncremental>false</LinkIncremental>
     <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -232,9 +230,9 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0502;_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -283,9 +281,9 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0600;_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -334,9 +332,9 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0502;'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
@@ -388,9 +386,9 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0600;'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';_DEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
@@ -446,12 +444,8 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0502;NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
       <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
@@ -510,12 +504,8 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0502;NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
       <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
@@ -574,12 +564,8 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0600;NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
       <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
@@ -638,12 +624,8 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0600;NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
       <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
@@ -702,12 +684,8 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0502;'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
@@ -768,12 +746,8 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0600;'FT_EXPORT(x)=__declspec(dllexport) x';'FT_BASE(x)=__declspec(dllexport) x';'FT_EXPORT_DEF(x)=__declspec(dllexport) x';NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4244;4996;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
