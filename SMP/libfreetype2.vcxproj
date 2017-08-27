@@ -243,20 +243,20 @@
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\freetype2
-copy ..\include\*.h $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\freetype
-copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
-del $(OutDir)\include\freetype2\freetype\ftmac.h
-mkdir $(OutDir)\include\freetype2\freetype\config
-copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\freetype2
+copy ..\include\*.h "$(OutDir)"\include\freetype2
+mkdir "$(OutDir)"\include\freetype2\freetype
+copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
+del "$(OutDir)"\include\freetype2\freetype\ftmac.h
+mkdir "$(OutDir)"\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rd /s /q "$(OutDir)"\include\freetype2
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -266,8 +266,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rmdir /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rmdir /s /q "$(OutDir)"\include\freetype2
 )
 if exist $(OutDir)\licenses\freetype2.txt (
 del /f /q $(OutDir)\licenses\freetype2.txt
@@ -294,20 +294,20 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\freetype2
-copy ..\include\*.h $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\freetype
-copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
-del $(OutDir)\include\freetype2\freetype\ftmac.h
-mkdir $(OutDir)\include\freetype2\freetype\config
-copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\freetype2
+copy ..\include\*.h "$(OutDir)"\include\freetype2
+mkdir "$(OutDir)"\include\freetype2\freetype
+copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
+del "$(OutDir)"\include\freetype2\freetype\ftmac.h
+mkdir "$(OutDir)"\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rd /s /q "$(OutDir)"\include\freetype2
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -317,8 +317,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rmdir /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rmdir /s /q "$(OutDir)"\include\freetype2
 )
 if exist $(OutDir)\licenses\freetype2.txt (
 del /f /q $(OutDir)\licenses\freetype2.txt
@@ -348,20 +348,20 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\freetype2
-copy ..\include\*.h $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\freetype
-copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
-del $(OutDir)\include\freetype2\freetype\ftmac.h
-mkdir $(OutDir)\include\freetype2\freetype\config
-copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\freetype2
+copy ..\include\*.h "$(OutDir)"\include\freetype2
+mkdir "$(OutDir)"\include\freetype2\freetype
+copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
+del "$(OutDir)"\include\freetype2\freetype\ftmac.h
+mkdir "$(OutDir)"\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rd /s /q "$(OutDir)"\include\freetype2
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -371,8 +371,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rmdir /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rmdir /s /q "$(OutDir)"\include\freetype2
 )
 if exist $(OutDir)\licenses\freetype2.txt (
 del /f /q $(OutDir)\licenses\freetype2.txt
@@ -401,20 +401,20 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\freetype2
-copy ..\include\*.h $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\freetype
-copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
-del $(OutDir)\include\freetype2\freetype\ftmac.h
-mkdir $(OutDir)\include\freetype2\freetype\config
-copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\freetype2
+copy ..\include\*.h "$(OutDir)"\include\freetype2
+mkdir "$(OutDir)"\include\freetype2\freetype
+copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
+del "$(OutDir)"\include\freetype2\freetype\ftmac.h
+mkdir "$(OutDir)"\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rd /s /q "$(OutDir)"\include\freetype2
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -424,8 +424,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rmdir /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rmdir /s /q "$(OutDir)"\include\freetype2
 )
 if exist $(OutDir)\licenses\freetype2.txt (
 del /f /q $(OutDir)\licenses\freetype2.txt
@@ -461,20 +461,20 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\freetype2
-copy ..\include\*.h $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\freetype
-copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
-del $(OutDir)\include\freetype2\freetype\ftmac.h
-mkdir $(OutDir)\include\freetype2\freetype\config
-copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\freetype2
+copy ..\include\*.h "$(OutDir)"\include\freetype2
+mkdir "$(OutDir)"\include\freetype2\freetype
+copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
+del "$(OutDir)"\include\freetype2\freetype\ftmac.h
+mkdir "$(OutDir)"\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rd /s /q "$(OutDir)"\include\freetype2
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -484,8 +484,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rmdir /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rmdir /s /q "$(OutDir)"\include\freetype2
 )
 if exist $(OutDir)\licenses\freetype2.txt (
 del /f /q $(OutDir)\licenses\freetype2.txt
@@ -521,20 +521,20 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\freetype2
-copy ..\include\*.h $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\freetype
-copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
-del $(OutDir)\include\freetype2\freetype\ftmac.h
-mkdir $(OutDir)\include\freetype2\freetype\config
-copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\freetype2
+copy ..\include\*.h "$(OutDir)"\include\freetype2
+mkdir "$(OutDir)"\include\freetype2\freetype
+copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
+del "$(OutDir)"\include\freetype2\freetype\ftmac.h
+mkdir "$(OutDir)"\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rd /s /q "$(OutDir)"\include\freetype2
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -544,8 +544,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rmdir /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rmdir /s /q "$(OutDir)"\include\freetype2
 )
 if exist $(OutDir)\licenses\freetype2.txt (
 del /f /q $(OutDir)\licenses\freetype2.txt
@@ -581,20 +581,20 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\freetype2
-copy ..\include\*.h $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\freetype
-copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
-del $(OutDir)\include\freetype2\freetype\ftmac.h
-mkdir $(OutDir)\include\freetype2\freetype\config
-copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\freetype2
+copy ..\include\*.h "$(OutDir)"\include\freetype2
+mkdir "$(OutDir)"\include\freetype2\freetype
+copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
+del "$(OutDir)"\include\freetype2\freetype\ftmac.h
+mkdir "$(OutDir)"\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rd /s /q "$(OutDir)"\include\freetype2
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -604,8 +604,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rmdir /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rmdir /s /q "$(OutDir)"\include\freetype2
 )
 if exist $(OutDir)\licenses\freetype2.txt (
 del /f /q $(OutDir)\licenses\freetype2.txt
@@ -641,20 +641,20 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\freetype2
-copy ..\include\*.h $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\freetype
-copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
-del $(OutDir)\include\freetype2\freetype\ftmac.h
-mkdir $(OutDir)\include\freetype2\freetype\config
-copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\freetype2
+copy ..\include\*.h "$(OutDir)"\include\freetype2
+mkdir "$(OutDir)"\include\freetype2\freetype
+copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
+del "$(OutDir)"\include\freetype2\freetype\ftmac.h
+mkdir "$(OutDir)"\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rd /s /q "$(OutDir)"\include\freetype2
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -664,8 +664,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rmdir /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rmdir /s /q "$(OutDir)"\include\freetype2
 )
 if exist $(OutDir)\licenses\freetype2.txt (
 del /f /q $(OutDir)\licenses\freetype2.txt
@@ -703,20 +703,20 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\freetype2
-copy ..\include\*.h $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\freetype
-copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
-del $(OutDir)\include\freetype2\freetype\ftmac.h
-mkdir $(OutDir)\include\freetype2\freetype\config
-copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\freetype2
+copy ..\include\*.h "$(OutDir)"\include\freetype2
+mkdir "$(OutDir)"\include\freetype2\freetype
+copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
+del "$(OutDir)"\include\freetype2\freetype\ftmac.h
+mkdir "$(OutDir)"\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rd /s /q "$(OutDir)"\include\freetype2
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -726,8 +726,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rmdir /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rmdir /s /q "$(OutDir)"\include\freetype2
 )
 if exist $(OutDir)\licenses\freetype2.txt (
 del /f /q $(OutDir)\licenses\freetype2.txt
@@ -764,20 +764,20 @@ del /f /q $(OutDir)\licenses\freetype2.txt
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\freetype2
-copy ..\include\*.h $(OutDir)\include\freetype2
-mkdir $(OutDir)\include\freetype2\freetype
-copy ..\include\freetype\*.h $(OutDir)\include\freetype2\freetype
-del $(OutDir)\include\freetype2\freetype\ftmac.h
-mkdir $(OutDir)\include\freetype2\freetype\config
-copy ..\include\freetype\config\*.h $(OutDir)\include\freetype2\freetype\config
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\freetype2
+copy ..\include\*.h "$(OutDir)"\include\freetype2
+mkdir "$(OutDir)"\include\freetype2\freetype
+copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
+del "$(OutDir)"\include\freetype2\freetype\ftmac.h
+mkdir "$(OutDir)"\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
 copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rd /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rd /s /q "$(OutDir)"\include\freetype2
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -787,8 +787,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\freetype2 (
-rmdir /s /q $(OutDir)\include\freetype2
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rmdir /s /q "$(OutDir)"\include\freetype2
 )
 if exist $(OutDir)\licenses\freetype2.txt (
 del /f /q $(OutDir)\licenses\freetype2.txt
