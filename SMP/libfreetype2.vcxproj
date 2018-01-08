@@ -847,15 +847,14 @@ del /f /q $(OutDir)\licenses\freetype2.txt
     <ClInclude Include="..\include\freetype\config\ftstdlib.h" />
     <ClInclude Include="..\include\freetype\freetype.h" />
     <ClInclude Include="..\include\freetype\ftadvanc.h" />
-    <ClInclude Include="..\include\freetype\ftautoh.h" />
     <ClInclude Include="..\include\freetype\ftbbox.h" />
     <ClInclude Include="..\include\freetype\ftbdf.h" />
     <ClInclude Include="..\include\freetype\ftbitmap.h" />
     <ClInclude Include="..\include\freetype\ftbzip2.h" />
     <ClInclude Include="..\include\freetype\ftcache.h" />
-    <ClInclude Include="..\include\freetype\ftcffdrv.h" />
     <ClInclude Include="..\include\freetype\ftchapters.h" />
     <ClInclude Include="..\include\freetype\ftcid.h" />
+    <ClInclude Include="..\include\freetype\ftdriver.h" />
     <ClInclude Include="..\include\freetype\fterrdef.h" />
     <ClInclude Include="..\include\freetype\fterrors.h" />
     <ClInclude Include="..\include\freetype\ftfntfmt.h" />
@@ -874,7 +873,7 @@ del /f /q $(OutDir)\licenses\freetype2.txt
     <ClInclude Include="..\include\freetype\ftmoderr.h" />
     <ClInclude Include="..\include\freetype\ftotval.h" />
     <ClInclude Include="..\include\freetype\ftoutln.h" />
-    <ClInclude Include="..\include\freetype\ftpcfdrv.h" />
+    <ClInclude Include="..\include\freetype\ftparams.h" />
     <ClInclude Include="..\include\freetype\ftpfr.h" />
     <ClInclude Include="..\include\freetype\ftrender.h" />
     <ClInclude Include="..\include\freetype\ftsizes.h" />
@@ -883,17 +882,19 @@ del /f /q $(OutDir)\licenses\freetype2.txt
     <ClInclude Include="..\include\freetype\ftsynth.h" />
     <ClInclude Include="..\include\freetype\ftsystem.h" />
     <ClInclude Include="..\include\freetype\fttrigon.h" />
-    <ClInclude Include="..\include\freetype\ftttdrv.h" />
     <ClInclude Include="..\include\freetype\fttypes.h" />
     <ClInclude Include="..\include\freetype\ftwinfnt.h" />
     <ClInclude Include="..\include\freetype\internal\autohint.h" />
+    <ClInclude Include="..\include\freetype\internal\cffotypes.h" />
+    <ClInclude Include="..\include\freetype\internal\cfftypes.h" />
     <ClInclude Include="..\include\freetype\internal\ftcalc.h" />
     <ClInclude Include="..\include\freetype\internal\ftdebug.h" />
-    <ClInclude Include="..\include\freetype\internal\ftdriver.h" />
+    <ClInclude Include="..\include\freetype\internal\ftdrv.h" />
     <ClInclude Include="..\include\freetype\internal\ftgloadr.h" />
     <ClInclude Include="..\include\freetype\internal\ftmemory.h" />
     <ClInclude Include="..\include\freetype\internal\ftobjs.h" />
     <ClInclude Include="..\include\freetype\internal\ftpic.h" />
+    <ClInclude Include="..\include\freetype\internal\ftpsprop.h" />
     <ClInclude Include="..\include\freetype\internal\ftrfork.h" />
     <ClInclude Include="..\include\freetype\internal\ftserv.h" />
     <ClInclude Include="..\include\freetype\internal\ftstream.h" />
@@ -903,6 +904,7 @@ del /f /q $(OutDir)\licenses\freetype2.txt
     <ClInclude Include="..\include\freetype\internal\psaux.h" />
     <ClInclude Include="..\include\freetype\internal\pshints.h" />
     <ClInclude Include="..\include\freetype\internal\services\svbdf.h" />
+    <ClInclude Include="..\include\freetype\internal\services\svcfftl.h" />
     <ClInclude Include="..\include\freetype\internal\services\svcid.h" />
     <ClInclude Include="..\include\freetype\internal\services\svfntfmt.h" />
     <ClInclude Include="..\include\freetype\internal\services\svgldict.h" />
@@ -928,11 +930,17 @@ del /f /q $(OutDir)\licenses\freetype2.txt
     <ClInclude Include="..\include\freetype\ttnameid.h" />
     <ClInclude Include="..\include\freetype\tttables.h" />
     <ClInclude Include="..\include\freetype\tttags.h" />
-    <ClInclude Include="..\include\freetype\ttunpat.h" />
     <ClInclude Include="..\include\ft2build.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="libfreetype.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\builds\windows\ftver.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='ReleaseLTO'">true</ExcludedFromBuild>
+    </ResourceCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

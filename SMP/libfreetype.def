@@ -37,6 +37,7 @@ EXPORTS
   FT_Done_FreeType
   FT_Done_Glyph
   FT_Done_Library
+  FT_Done_MM_Var
   FT_Done_Size
   FT_Face_CheckTrueTypePatents
   FT_Face_GetCharVariantIndex
@@ -162,6 +163,7 @@ EXPORTS
   FT_Set_Default_Properties
   FT_Set_MM_Blend_Coordinates
   FT_Set_MM_Design_Coordinates
+  FT_Set_Named_Instance
   FT_Set_Pixel_Sizes
   FT_Set_Renderer
   FT_Set_Transform

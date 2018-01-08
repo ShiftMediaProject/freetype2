@@ -221,9 +221,6 @@
     <ClInclude Include="..\include\ft2build.h">
       <Filter>Header Files\freetype2</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\freetype\ftautoh.h">
-      <Filter>Header Files\freetype2\freetype</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\freetype\ftbbox.h">
       <Filter>Header Files\freetype2\freetype</Filter>
     </ClInclude>
@@ -237,9 +234,6 @@
       <Filter>Header Files\freetype2\freetype</Filter>
     </ClInclude>
     <ClInclude Include="..\include\freetype\ftcache.h">
-      <Filter>Header Files\freetype2\freetype</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\freetype\ftcffdrv.h">
       <Filter>Header Files\freetype2\freetype</Filter>
     </ClInclude>
     <ClInclude Include="..\include\freetype\ftchapters.h">
@@ -326,9 +320,6 @@
     <ClInclude Include="..\include\freetype\fttrigon.h">
       <Filter>Header Files\freetype2\freetype</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\freetype\ftttdrv.h">
-      <Filter>Header Files\freetype2\freetype</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\freetype\fttypes.h">
       <Filter>Header Files\freetype2\freetype</Filter>
     </ClInclude>
@@ -345,9 +336,6 @@
       <Filter>Header Files\freetype2\freetype</Filter>
     </ClInclude>
     <ClInclude Include="..\include\freetype\tttags.h">
-      <Filter>Header Files\freetype2\freetype</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\freetype\ttunpat.h">
       <Filter>Header Files\freetype2\freetype</Filter>
     </ClInclude>
     <ClInclude Include="..\include\freetype\freetype.h">
@@ -378,9 +366,6 @@
       <Filter>Header Files\freetype2\freetype\internal</Filter>
     </ClInclude>
     <ClInclude Include="..\include\freetype\internal\ftdebug.h">
-      <Filter>Header Files\freetype2\freetype\internal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\freetype\internal\ftdriver.h">
       <Filter>Header Files\freetype2\freetype\internal</Filter>
     </ClInclude>
     <ClInclude Include="..\include\freetype\internal\ftgloadr.h">
@@ -485,13 +470,36 @@
     <ClInclude Include="..\include\freetype\internal\services\svmetric.h">
       <Filter>Header Files\freetype2\freetype\internal\services</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\freetype\ftpcfdrv.h">
+    <ClInclude Include="..\include\freetype\ftdriver.h">
       <Filter>Header Files\freetype2\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\ftparams.h">
+      <Filter>Header Files\freetype2\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\internal\cffotypes.h">
+      <Filter>Header Files\freetype2\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\internal\cfftypes.h">
+      <Filter>Header Files\freetype2\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\internal\ftdrv.h">
+      <Filter>Header Files\freetype2\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\internal\ftpsprop.h">
+      <Filter>Header Files\freetype2\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\internal\services\svcfftl.h">
+      <Filter>Header Files\freetype2\freetype\internal\services</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="libfreetype.def">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\builds\windows\ftver.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
