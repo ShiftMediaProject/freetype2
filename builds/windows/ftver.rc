@@ -12,10 +12,10 @@ FILEFLAGS            VS_FF_DEBUG
 #endif
 #ifdef _DLL
 FILETYPE             VFT_DLL
-#define FT_FILENAME  "freetype.dll"
+#define FT_FILENAME  "freetype2.dll"
 #else
 FILETYPE             VFT_STATIC_LIB
-#define FT_FILENAME  "freetype.lib"
+#define FT_FILENAME  "libfreetype2.lib"
 #endif
 BEGIN
   BLOCK "StringFileInfo"
