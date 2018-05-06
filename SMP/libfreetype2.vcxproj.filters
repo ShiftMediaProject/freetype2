@@ -114,9 +114,6 @@
     <ClCompile Include="..\src\base\ftinit.c">
       <Filter>Source Files\base</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\base\ftlcdfil.c">
-      <Filter>Source Files\base</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\base\ftmm.c">
       <Filter>Source Files\base</Filter>
     </ClCompile>
@@ -212,9 +209,6 @@
     </ClCompile>
     <ClCompile Include="..\src\cache\ftcache.c">
       <Filter>Source Files\cache</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\base\ftfntfmt.c">
-      <Filter>Source Files\base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -498,7 +492,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\builds\windows\ftver.rc">
+    <ResourceCompile Include="..\src\base\ftver.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
