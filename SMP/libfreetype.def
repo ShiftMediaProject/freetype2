@@ -22,6 +22,7 @@ EXPORTS
   FT_Atan2
   FT_Attach_File
   FT_Attach_Stream
+  FT_Bitmap_Blend
   FT_Bitmap_Convert
   FT_Bitmap_Copy
   FT_Bitmap_Done
@@ -39,6 +40,7 @@ EXPORTS
   FT_Done_Library
   FT_Done_MM_Var
   FT_Done_Size
+  FT_Error_String
   FT_Face_CheckTrueTypePatents
   FT_Face_GetCharVariantIndex
   FT_Face_GetCharVariantIsDefault
@@ -59,6 +61,7 @@ EXPORTS
   FT_Get_CMap_Language_ID
   FT_Get_Char_Index
   FT_Get_Charmap_Index
+  FT_Get_Color_Glyph_Layer
   FT_Get_FSType_Flags
   FT_Get_First_Char
   FT_Get_Font_Format
@@ -68,6 +71,7 @@ EXPORTS
   FT_Get_Kerning
   FT_Get_MM_Blend_Coordinates
   FT_Get_MM_Var
+  FT_Get_MM_WeightVector
   FT_Get_Module
   FT_Get_Multi_Master
   FT_Get_Name_Index
@@ -106,6 +110,7 @@ EXPORTS
   FT_Init_FreeType
   FT_Library_SetLcdFilter
   FT_Library_SetLcdFilterWeights
+  FT_Library_SetLcdGeometry
   FT_Library_Version
   FT_List_Add
   FT_List_Finalize
@@ -122,6 +127,7 @@ EXPORTS
   FT_MulDiv
   FT_MulFix
   FT_New_Face
+  FT_New_Glyph
   FT_New_Library
   FT_New_Memory_Face
   FT_New_Size
@@ -132,7 +138,6 @@ EXPORTS
   FT_Outline_Copy
   FT_Outline_Decompose
   FT_Outline_Done
-  FT_Outline_Done_Internal
   FT_Outline_Embolden
   FT_Outline_EmboldenXY
   FT_Outline_GetInsideBorder
@@ -142,11 +147,13 @@ EXPORTS
   FT_Outline_Get_CBox
   FT_Outline_Get_Orientation
   FT_Outline_New
-  FT_Outline_New_Internal
   FT_Outline_Render
   FT_Outline_Reverse
   FT_Outline_Transform
   FT_Outline_Translate
+  FT_Palette_Data_Get
+  FT_Palette_Select
+  FT_Palette_Set_Foreground_Color
   FT_Property_Get
   FT_Property_Set
   FT_Reference_Face
@@ -163,6 +170,7 @@ EXPORTS
   FT_Set_Default_Properties
   FT_Set_MM_Blend_Coordinates
   FT_Set_MM_Design_Coordinates
+  FT_Set_MM_WeightVector
   FT_Set_Named_Instance
   FT_Set_Pixel_Sizes
   FT_Set_Renderer

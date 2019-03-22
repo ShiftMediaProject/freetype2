@@ -371,9 +371,6 @@
     <ClInclude Include="..\include\freetype\internal\ftobjs.h">
       <Filter>Header Files\freetype2\freetype\internal</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\freetype\internal\ftpic.h">
-      <Filter>Header Files\freetype2\freetype\internal</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\freetype\internal\ftrfork.h">
       <Filter>Header Files\freetype2\freetype\internal</Filter>
     </ClInclude>
@@ -484,6 +481,9 @@
     </ClInclude>
     <ClInclude Include="..\include\freetype\internal\services\svcfftl.h">
       <Filter>Header Files\freetype2\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\ftcolor.h">
+      <Filter>Header Files\freetype2\freetype</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
