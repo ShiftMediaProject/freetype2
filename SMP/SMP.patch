@@ -1,0 +1,17 @@
+diff --git a/src/base/ftver.rc b/src/base/ftver.rc
+index e02a88652..933586046 100644
+--- a/src/base/ftver.rc
++++ b/src/base/ftver.rc
+@@ -30,10 +30,10 @@ FILEFLAGS            VS_FF_DEBUG
+ #endif
+ #ifdef DLL_EXPORT
+ FILETYPE             VFT_DLL
+-#define FT_FILENAME  "freetype.dll"
++#define FT_FILENAME  "freetype2.dll"
+ #else
+ FILETYPE             VFT_STATIC_LIB
+-#define FT_FILENAME  "freetype.lib"
++#define FT_FILENAME  "libfreetype2.lib"
+ #endif
+ BEGIN
+   BLOCK "StringFileInfo"
