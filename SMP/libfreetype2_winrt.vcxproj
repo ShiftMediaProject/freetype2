@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E62DC439-DE3B-4F2F-84DF-B34E51FA1969}</ProjectGuid>
+    <ProjectGuid>{A62DC439-DE3B-4F2F-84DF-B34E51FA1969}</ProjectGuid>
     <RootNamespace>freetype</RootNamespace>
   </PropertyGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="smp.props" />
+    <Import Project="smp_winrt.props" />
     <Import Project="libfreetype2_files.props" />
   </ImportGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -46,7 +46,7 @@ del /f /q $(OutDir)\licenses\freetype2.txt
 )</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
     <ClCompile>
       <PreprocessorDefinitions>FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -84,48 +84,7 @@ del /f /q $(OutDir)\licenses\freetype2.txt
 )</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
-    <ClCompile>
-      <PreprocessorDefinitions>FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4005;4267;4244;4312;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-    </ClCompile>
-    <Link>
-      <ModuleDefinitionFile>libfreetype.def</ModuleDefinitionFile>
-    </Link>
-    <PostBuildEvent>
-      <Command>mkdir "$(OutDir)"\include
-mkdir "$(OutDir)"\include\freetype2
-copy ..\include\*.h "$(OutDir)"\include\freetype2
-mkdir "$(OutDir)"\include\freetype2\freetype
-copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
-del "$(OutDir)"\include\freetype2\freetype\ftmac.h
-mkdir "$(OutDir)"\include\freetype2\freetype\config
-copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
-mkdir $(OutDir)\licenses
-copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
-    </PostBuildEvent>
-    <PreBuildEvent>
-      <Command>if exist "$(OutDir)"\include\freetype2 (
-rd /s /q "$(OutDir)"\include\freetype2
-cd ../
-cd $(ProjectDir)
-)</Command>
-    </PreBuildEvent>
-    <CustomBuildStep>
-      <Message>Custom Clean Step</Message>
-    </CustomBuildStep>
-    <CustomBuildStep>
-      <Outputs>force_clean</Outputs>
-      <Command>if exist "$(OutDir)"\include\freetype2 (
-rmdir /s /q "$(OutDir)"\include\freetype2
-)
-if exist $(OutDir)\licenses\freetype2.txt (
-del /f /q $(OutDir)\licenses\freetype2.txt
-)</Command>
-    </CustomBuildStep>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -166,7 +125,48 @@ del /f /q $(OutDir)\licenses\freetype2.txt
 )</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4267;4244;4312;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <ModuleDefinitionFile>libfreetype.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\freetype2
+copy ..\include\*.h "$(OutDir)"\include\freetype2
+mkdir "$(OutDir)"\include\freetype2\freetype
+copy ..\include\freetype\*.h "$(OutDir)"\include\freetype2\freetype
+del "$(OutDir)"\include\freetype2\freetype\ftmac.h
+mkdir "$(OutDir)"\include\freetype2\freetype\config
+copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
+mkdir $(OutDir)\licenses
+copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rd /s /q "$(OutDir)"\include\freetype2
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\freetype2 (
+rmdir /s /q "$(OutDir)"\include\freetype2
+)
+if exist $(OutDir)\licenses\freetype2.txt (
+del /f /q $(OutDir)\licenses\freetype2.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -204,7 +204,7 @@ del /f /q $(OutDir)\licenses\freetype2.txt
 )</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
     <ClCompile>
       <PreprocessorDefinitions>FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -242,7 +242,7 @@ del /f /q $(OutDir)\licenses\freetype2.txt
 )</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -283,7 +283,7 @@ del /f /q $(OutDir)\licenses\freetype2.txt
 )</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
     <ClCompile>
       <PreprocessorDefinitions>FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
