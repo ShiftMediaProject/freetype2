@@ -29,11 +29,19 @@ FILEFLAGSMASK        VS_FFI_FILEFLAGSMASK
 FILEFLAGS            VS_FF_DEBUG
 #endif
 #ifdef DLL_EXPORT
-FILETYPE             VFT_DLL
-#define FT_FILENAME  "freetype2.dll"
+            FILETYPE VFT_DLL
+#ifdef _DEBUG
+#define FT_FILENAME  "freetyped.dll"
+#else
+#define FT_FILENAME  "freetype.dll"
+#endif
 #else
 FILETYPE             VFT_STATIC_LIB
-#define FT_FILENAME  "libfreetype2.lib"
+#ifdef _DEBUG
+#define FT_FILENAME  "libfreetyped.dll"
+#else
+#define FT_FILENAME  "libfreetype.lib"
+#endif
 #endif
 BEGIN
   BLOCK "StringFileInfo"
