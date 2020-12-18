@@ -386,9 +386,6 @@
     <ClInclude Include="..\include\freetype\internal\ftvalid.h">
       <Filter>Header Files\freetype2\freetype\internal</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\freetype\internal\internal.h">
-      <Filter>Header Files\freetype2\freetype\internal</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\freetype\internal\psaux.h">
       <Filter>Header Files\freetype2\freetype\internal</Filter>
     </ClInclude>
@@ -484,6 +481,18 @@
     </ClInclude>
     <ClInclude Include="..\include\freetype\ftcolor.h">
       <Filter>Header Files\freetype2\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\config\integer-types.h">
+      <Filter>Header Files\freetype2\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\config\mac-support.h">
+      <Filter>Header Files\freetype2\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\config\public-macros.h">
+      <Filter>Header Files\freetype2\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\internal\compiler-macros.h">
+      <Filter>Header Files\freetype2\freetype\internal</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

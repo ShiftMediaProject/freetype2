@@ -48,6 +48,10 @@
     <ClInclude Include="..\include\freetype\config\ftmodule.h" />
     <ClInclude Include="..\include\freetype\config\ftoption.h" />
     <ClInclude Include="..\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="..\include\freetype\config\integer-types.h" />
+    <ClInclude Include="..\include\freetype\config\mac-support.h" />
+    <ClInclude Include="..\include\freetype\config\public-macros.h" />
+    <ClInclude Include="..\include\freetype\internal\compiler-macros.h" />
     <ClInclude Include="..\include\freetype\freetype.h" />
     <ClInclude Include="..\include\freetype\ftadvanc.h" />
     <ClInclude Include="..\include\freetype\ftbbox.h" />
@@ -103,7 +107,6 @@
     <ClInclude Include="..\include\freetype\internal\ftstream.h" />
     <ClInclude Include="..\include\freetype\internal\fttrace.h" />
     <ClInclude Include="..\include\freetype\internal\ftvalid.h" />
-    <ClInclude Include="..\include\freetype\internal\internal.h" />
     <ClInclude Include="..\include\freetype\internal\psaux.h" />
     <ClInclude Include="..\include\freetype\internal\pshints.h" />
     <ClInclude Include="..\include\freetype\internal\services\svbdf.h" />
