@@ -88,6 +88,15 @@
     <Filter Include="Header Files\freetype2\freetype\internal\services">
       <UniqueIdentifier>{f66bb9d5-8398-4c14-b337-2e935f0edce6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\sdf">
+      <UniqueIdentifier>{46f02623-0903-4433-b3bc-096b73f7ec2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dlg">
+      <UniqueIdentifier>{e171133d-f1b9-45a7-8e88-ee7634e0d30f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\build">
+      <UniqueIdentifier>{49b18f97-ea5d-480f-89e8-70602ee7fecd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\autofit\autofit.c">
@@ -130,9 +139,6 @@
       <Filter>Source Files\base</Filter>
     </ClCompile>
     <ClCompile Include="..\src\base\ftsynth.c">
-      <Filter>Source Files\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\base\ftsystem.c">
       <Filter>Source Files\base</Filter>
     </ClCompile>
     <ClCompile Include="..\src\base\fttype1.c">
@@ -204,11 +210,20 @@
     <ClCompile Include="..\src\bzip2\ftbzip2.c">
       <Filter>Source Files\bzip2</Filter>
     </ClCompile>
-    <ClCompile Include="..\builds\windows\ftdebug.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\cache\ftcache.c">
       <Filter>Source Files\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sdf\sdf.c">
+      <Filter>Source Files\sdf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dlg\dlgwrap.c">
+      <Filter>Source Files\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\builds\windows\ftsystem.c">
+      <Filter>Source Files\build</Filter>
+    </ClCompile>
+    <ClCompile Include="..\builds\windows\ftdebug.c">
+      <Filter>Source Files\build</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

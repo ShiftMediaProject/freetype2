@@ -24,7 +24,7 @@ del "$(OutDir)"\include\freetype2\freetype\ftmac.h
 mkdir "$(OutDir)"\include\freetype2\freetype\config
 copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
-copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
+copy ..\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist "$(OutDir)"\include\freetype2 (
@@ -62,7 +62,7 @@ del "$(OutDir)"\include\freetype2\freetype\ftmac.h
 mkdir "$(OutDir)"\include\freetype2\freetype\config
 copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
-copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
+copy ..\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist "$(OutDir)"\include\freetype2 (
@@ -103,7 +103,7 @@ del "$(OutDir)"\include\freetype2\freetype\ftmac.h
 mkdir "$(OutDir)"\include\freetype2\freetype\config
 copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
-copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
+copy ..\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist "$(OutDir)"\include\freetype2 (
@@ -144,7 +144,7 @@ del "$(OutDir)"\include\freetype2\freetype\ftmac.h
 mkdir "$(OutDir)"\include\freetype2\freetype\config
 copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
-copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
+copy ..\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist "$(OutDir)"\include\freetype2 (
@@ -182,7 +182,7 @@ del "$(OutDir)"\include\freetype2\freetype\ftmac.h
 mkdir "$(OutDir)"\include\freetype2\freetype\config
 copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
-copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
+copy ..\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist "$(OutDir)"\include\freetype2 (
@@ -220,7 +220,7 @@ del "$(OutDir)"\include\freetype2\freetype\ftmac.h
 mkdir "$(OutDir)"\include\freetype2\freetype\config
 copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
-copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
+copy ..\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist "$(OutDir)"\include\freetype2 (
@@ -261,7 +261,7 @@ del "$(OutDir)"\include\freetype2\freetype\ftmac.h
 mkdir "$(OutDir)"\include\freetype2\freetype\config
 copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
-copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
+copy ..\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist "$(OutDir)"\include\freetype2 (
@@ -302,7 +302,7 @@ del "$(OutDir)"\include\freetype2\freetype\ftmac.h
 mkdir "$(OutDir)"\include\freetype2\freetype\config
 copy ..\include\freetype\config\*.h "$(OutDir)"\include\freetype2\freetype\config
 mkdir $(OutDir)\licenses
-copy ..\docs\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
+copy ..\LICENSE.TXT $(OutDir)\licenses\freetype2.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist "$(OutDir)"\include\freetype2 (

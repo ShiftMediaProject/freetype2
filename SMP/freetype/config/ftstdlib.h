@@ -22,6 +22,8 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 
+#undef near
+
 #undef ft_fopen
 #define ft_fopen ft_fopen_win32
 

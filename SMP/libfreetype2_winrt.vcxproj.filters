@@ -88,6 +88,15 @@
     <Filter Include="Header Files\freetype2\freetype\internal\services">
       <UniqueIdentifier>{f66bb9d5-8398-4c14-b337-2e935f0edce6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\sdf">
+      <UniqueIdentifier>{5ce02e77-c784-4b67-bbb8-cc6e7efce42f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dlg">
+      <UniqueIdentifier>{49767694-ec2f-4351-bf04-fcbe857ff7fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\build">
+      <UniqueIdentifier>{b933b714-7c08-4b9f-8a88-c780d95074ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\autofit\autofit.c">
@@ -130,9 +139,6 @@
       <Filter>Source Files\base</Filter>
     </ClCompile>
     <ClCompile Include="..\src\base\ftsynth.c">
-      <Filter>Source Files\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\base\ftsystem.c">
       <Filter>Source Files\base</Filter>
     </ClCompile>
     <ClCompile Include="..\src\base\fttype1.c">
@@ -204,11 +210,20 @@
     <ClCompile Include="..\src\bzip2\ftbzip2.c">
       <Filter>Source Files\bzip2</Filter>
     </ClCompile>
-    <ClCompile Include="..\builds\windows\ftdebug.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\cache\ftcache.c">
       <Filter>Source Files\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sdf\sdf.c">
+      <Filter>Source Files\sdf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dlg\dlgwrap.c">
+      <Filter>Source Files\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\builds\windows\ftdebug.c">
+      <Filter>Source Files\build</Filter>
+    </ClCompile>
+    <ClCompile Include="..\builds\windows\ftsystem.c">
+      <Filter>Source Files\build</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -386,9 +401,6 @@
     <ClInclude Include="..\include\freetype\internal\ftvalid.h">
       <Filter>Header Files\freetype2\freetype\internal</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\freetype\internal\internal.h">
-      <Filter>Header Files\freetype2\freetype\internal</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\freetype\internal\psaux.h">
       <Filter>Header Files\freetype2\freetype\internal</Filter>
     </ClInclude>
@@ -484,6 +496,18 @@
     </ClInclude>
     <ClInclude Include="..\include\freetype\ftcolor.h">
       <Filter>Header Files\freetype2\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\config\public-macros.h">
+      <Filter>Header Files\freetype2\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\config\mac-support.h">
+      <Filter>Header Files\freetype2\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\config\integer-types.h">
+      <Filter>Header Files\freetype2\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\internal\compiler-macros.h">
+      <Filter>Header Files\freetype2\freetype\internal</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
