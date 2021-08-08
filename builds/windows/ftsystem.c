@@ -217,8 +217,30 @@
       return FT_THROW( Invalid_Stream_Handle );
 
     /* open the file */
+#if !defined( WINAPI_FAMILY ) || !( WINAPI_FAMILY == WINAPI_FAMILY_PC_APP || \
+    WINAPI_FAMILY == WINAPI_FAMILY_PHONE_APP )
     file = CreateFileA( filepathname, GENERIC_READ, FILE_SHARE_READ, NULL,
                         OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0 );
+#else
+    WCHAR wlpFileName[MAX_PATH];
+    if ( MultiByteToWideChar( CP_UTF8, 0, filepathname, -1, wlpFileName,
+                              MAX_PATH ) == 0 )
+    {
+      file = INVALID_HANDLE_VALUE;
+    }
+    else
+    {
+      CREATEFILE2_EXTENDED_PARAMETERS CreateExParams = { 0 };
+      CreateExParams.dwSize = sizeof( CREATEFILE2_EXTENDED_PARAMETERS );
+      CreateExParams.dwFileAttributes = FILE_ATTRIBUTE_NORMAL & 0xFFFF;
+      CreateExParams.dwFileFlags = FILE_ATTRIBUTE_NORMAL & 0xFFF00000;
+      CreateExParams.dwSecurityQosFlags = FILE_ATTRIBUTE_NORMAL & 0x000F0000;
+      CreateExParams.lpSecurityAttributes = NULL;
+      CreateExParams.hTemplateFile = 0;
+      file = CreateFile2( wlpFileName, GENERIC_READ, FILE_SHARE_READ,
+                          OPEN_EXISTING, &CreateExParams );
+    }
+#endif
     if ( file == INVALID_HANDLE_VALUE )
     {
       FT_ERROR(( "FT_Stream_Open:" ));
