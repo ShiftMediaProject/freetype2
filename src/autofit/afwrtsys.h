@@ -27,6 +27,8 @@
 #include "afcjk.h"
 #include "afindic.h"
 
+#else
+
 #endif /* AFWRTSYS_H_ */
 
 

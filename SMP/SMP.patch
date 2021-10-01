@@ -33,6 +33,19 @@ index cb1c7340e..e89907bca 100644
      if ( file == INVALID_HANDLE_VALUE )
      {
        FT_ERROR(( "FT_Stream_Open:" ));
+diff --git a/src/autofit/afwrtsys.h b/src/autofit/afwrtsys.h
+index 39aa12112..81e6108b9 100644
+--- a/src/autofit/afwrtsys.h
++++ b/src/autofit/afwrtsys.h
+@@ -27,6 +27,8 @@
+ #include "afcjk.h"
+ #include "afindic.h"
+ 
++#else
++
+ #endif /* AFWRTSYS_H_ */
+ 
+ 
 diff --git a/src/base/ftver.rc b/src/base/ftver.rc
 index 5fe433cbd..877a5fcc6 100644
 --- a/src/base/ftver.rc
