@@ -61,6 +61,7 @@ EXPORTS
   FT_Get_CMap_Language_ID
   FT_Get_Char_Index
   FT_Get_Charmap_Index
+  FT_Get_Color_Glyph_ClipBox
   FT_Get_Color_Glyph_Layer
   FT_Get_Color_Glyph_Paint
   FT_Get_Colorline_Stops
