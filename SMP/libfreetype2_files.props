@@ -39,6 +39,7 @@
     <ClCompile Include="..\src\sdf\sdf.c" />
     <ClCompile Include="..\src\sfnt\sfnt.c" />
     <ClCompile Include="..\src\smooth\smooth.c" />
+    <ClCompile Include="..\src\svg\svg.c" />
     <ClCompile Include="..\src\truetype\truetype.c" />
     <ClCompile Include="..\src\type1\type1.c" />
     <ClCompile Include="..\src\type42\type42.c" />
@@ -132,8 +133,10 @@
     <ClInclude Include="..\include\freetype\internal\services\svttglyf.h" />
     <ClInclude Include="..\include\freetype\internal\services\svwinfnt.h" />
     <ClInclude Include="..\include\freetype\internal\sfnt.h" />
+    <ClInclude Include="..\include\freetype\internal\svginterface.h" />
     <ClInclude Include="..\include\freetype\internal\t1types.h" />
     <ClInclude Include="..\include\freetype\internal\tttypes.h" />
+    <ClInclude Include="..\include\freetype\otsvg.h" />
     <ClInclude Include="..\include\freetype\t1tables.h" />
     <ClInclude Include="..\include\freetype\ttnameid.h" />
     <ClInclude Include="..\include\freetype\tttables.h" />

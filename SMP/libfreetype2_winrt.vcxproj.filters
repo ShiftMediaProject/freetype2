@@ -97,6 +97,9 @@
     <Filter Include="Source Files\build">
       <UniqueIdentifier>{b933b714-7c08-4b9f-8a88-c780d95074ca}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\svg">
+      <UniqueIdentifier>{22e3802f-cd7d-4e8b-8350-78cb25b5befb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\autofit\autofit.c">
@@ -224,6 +227,9 @@
     </ClCompile>
     <ClCompile Include="..\builds\windows\ftsystem.c">
       <Filter>Source Files\build</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\svg\svg.c">
+      <Filter>Source Files\svg</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -507,6 +513,12 @@
       <Filter>Header Files\freetype2\freetype\config</Filter>
     </ClInclude>
     <ClInclude Include="..\include\freetype\internal\compiler-macros.h">
+      <Filter>Header Files\freetype2\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\otsvg.h">
+      <Filter>Header Files\freetype2\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\freetype\internal\svginterface.h">
       <Filter>Header Files\freetype2\freetype\internal</Filter>
     </ClInclude>
   </ItemGroup>

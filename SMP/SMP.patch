@@ -1,8 +1,8 @@
 diff --git a/builds/windows/ftsystem.c b/builds/windows/ftsystem.c
-index 1ebadd49f..7c49158a6 100644
+index 4f4ac15f3..28ed21280 100644
 --- a/builds/windows/ftsystem.c
 +++ b/builds/windows/ftsystem.c
-@@ -266,8 +266,30 @@
+@@ -330,8 +330,30 @@
        return FT_THROW( Invalid_Stream_Handle );
  
      /* open the file */
@@ -34,7 +34,7 @@ index 1ebadd49f..7c49158a6 100644
      {
        FT_ERROR(( "FT_Stream_Open:" ));
 diff --git a/src/base/ftver.rc b/src/base/ftver.rc
-index a3d05b378..d70304202 100644
+index 2d0cb416b..3abf1c0bb 100644
 --- a/src/base/ftver.rc
 +++ b/src/base/ftver.rc
 @@ -29,11 +29,19 @@ FILEFLAGSMASK        VS_FFI_FILEFLAGSMASK
