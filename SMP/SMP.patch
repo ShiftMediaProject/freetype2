@@ -1,8 +1,8 @@
 diff --git a/builds/windows/ftsystem.c b/builds/windows/ftsystem.c
-index 4f4ac15f3..28ed21280 100644
+index 418d7995e..1d24c2545 100644
 --- a/builds/windows/ftsystem.c
 +++ b/builds/windows/ftsystem.c
-@@ -330,8 +330,30 @@
+@@ -329,8 +329,30 @@
        return FT_THROW( Invalid_Stream_Handle );
  
      /* open the file */
@@ -33,8 +33,21 @@ index 4f4ac15f3..28ed21280 100644
      if ( file == INVALID_HANDLE_VALUE )
      {
        FT_ERROR(( "FT_Stream_Open:" ));
+diff --git a/include/freetype/config/ftoption.h b/include/freetype/config/ftoption.h
+index 9e03e1783..38a131801 100644
+--- a/include/freetype/config/ftoption.h
++++ b/include/freetype/config/ftoption.h
+@@ -195,7 +195,7 @@ FT_BEGIN_HEADER
+    *   Define this macro if you want to enable this 'feature'.  See also the
+    *   macro `FT_CONFIG_OPTION_SYSTEM_ZLIB` below.
+    */
+-#define FT_CONFIG_OPTION_USE_ZLIB
++/* #define FT_CONFIG_OPTION_USE_ZLIB */
+ 
+ 
+   /**************************************************************************
 diff --git a/src/base/ftver.rc b/src/base/ftver.rc
-index 2d0cb416b..3abf1c0bb 100644
+index f113cb892..dcb33e89b 100644
 --- a/src/base/ftver.rc
 +++ b/src/base/ftver.rc
 @@ -29,11 +29,19 @@ FILEFLAGSMASK        VS_FFI_FILEFLAGSMASK
